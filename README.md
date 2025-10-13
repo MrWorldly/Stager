@@ -159,10 +159,13 @@ Include `Stager Examples.json` for reference layouts.
 
 Known working positions include:
 
-- `Left`, `Right`  
+- `Left`, `Right`
+- `Top`, `Bottom`
 - `Top Leading`, `Top Trailing`  
 - `Bottom Leading`, `Bottom Trailing`  
 - `Left Third`, `Middle Third`, `Right Third`
+- `Full Screen`
+- `Center`
 
 Other layouts may be possible depending on monitor size and Stage Manager behavior.  
 If you discover new layout keywords, please share them for inclusion.
