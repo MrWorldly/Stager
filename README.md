@@ -4,7 +4,6 @@
 **Platform:** iPad (Stage Manager)  
 **Version:** Beta 1  
 **Tested on:** iPad Air 13” (2025), iPadOS 26  
-**Repo / Docs:** [GitHub or RoutineHub link to be added]  
 **License:** MIT
 
 ---
