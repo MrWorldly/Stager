@@ -113,7 +113,7 @@ Include `Stager Examples.json` for reference layouts.
     "SelectAllStagesOnStartup": "No",
     "NotifyWhenDone": "Yes"
   },
-  "Workspaces": {
+  "Stages": {
     "1 - Work": {
       "Apps": [
         { "Name": "Outlook", "WindowPosition": "Left" },
