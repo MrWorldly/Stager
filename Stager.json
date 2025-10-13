@@ -1,0 +1,43 @@
+{
+  "Options": {
+  	"SelectAllStagesOnStartup": "No",
+  	"NotifyWhenDone": "Yes"
+  },
+  "Stages": {
+    "1 - Outlook, Things, & Slack": {
+      "Apps": [
+        { "Name": "Outlook", "WindowPosition": "Left" },
+        { "Name": "Things", "WindowPosition": "Top Trailing" },
+        { "Name": "Slack", "WindowPosition": "Bottom Trailing" }
+      ]
+    },
+    "2 - Safari, Notes, & Zoom": {
+      "Apps": [
+        { "Name": "Safari", "WindowPosition": "Left" },
+        { "Name": "Notes", "WindowPosition": "Top Trailing" },
+        { "Name": "Zoom", "WindowPosition": "Bottom Trailing" }
+      ]
+    },
+    "5 - News": {
+      "Apps": [
+        { "Name": "News", "WindowPosition": "Left Third" },
+        { "Name": "Reddit", "WindowPosition": "Middle Third" },
+        { "Name": "Newsify", "WindowPosition": "Right Third" }
+      ]
+    },
+    "4 - Personal Comms": {
+      "Apps": [
+        { "Name": "Mail", "WindowPosition": "Top Leading" },
+        { "Name": "Messages", "WindowPosition": "Top Trailing" },
+        { "Name": "Calendar", "WindowPosition": "Bottom Leading" },
+        { "Name": "ChatGPT", "WindowPosition": "Bottom Trailing" }
+      ]
+    },
+    "3 - Music & Podcasts": {
+      "Apps": [
+        { "Name": "Music", "WindowPosition": "Left" },
+        { "Name": "Podcasts", "WindowPosition": "Right" }      
+      ]
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "Options": {
+  	"SelectAllStagesOnStartup": "No",
+  	"NotifyWhenDone": "Yes"
+  },
+  "Stages": {
+    "Layout 1 - 1 Left, 1 Right": {
+      "Apps": [
+        { "Name": "Mail", "WindowPosition": "Left" },
+        { "Name": "Notes", "WindowPosition": "Right" }      
+      ]
+    },
+    "Layout 2 - 1 Top, 1 Bottom": {
+      "Apps": [
+        { "Name": "Music", "WindowPosition": "Top" },
+        { "Name": "Podcasts", "WindowPosition": "Bottom" }      
+      ]
+    },
+    "Layout 3 - 1 Left, 2 Right": {
+      "Apps": [
+        { "Name": "Messages", "WindowPosition": "Left" },
+        { "Name": "Reminders", "WindowPosition": "Top Trailing" },
+        { "Name": "Settings", "WindowPosition": "Bottom Trailing" }
+      ]
+    },
+    "Layout 4 - 2 Left, 1 Right": {
+      "Apps": [
+        { "Name": "Voice Memos", "WindowPosition": "Top Leading" },
+        { "Name": "Books", "WindowPosition": "Bottom Leading" },
+        { "Name": "Translate", "WindowPosition": "Right" }
+      ]
+    },
+    "Layout 5 - 1 Top, 2 Bottom": {
+      "Apps": [
+        { "Name": "Files", "WindowPosition": "Bottom Leading" },
+        { "Name": "Phone", "WindowPosition": "Bottom Trailing" },
+        { "Name": "Home", "WindowPosition": "Top" }
+      ]
+    },
+    "Layout 6 - 2 Top, 1 Bottom": {
+      "Apps": [
+        { "Name": "Calculator", "WindowPosition": "Top Leading" },
+        { "Name": "Clock", "WindowPosition": "Top Trailing" },
+        { "Name": "Journal", "WindowPosition": "Bottom" }
+      ]
+    },
+    "Layout 7 - 3 Columns": {
+      "Apps": [
+        { "Name": "News", "WindowPosition": "Left Third" },
+        { "Name": "TV", "WindowPosition": "Middle Third" },
+        { "Name": "FaceTime", "WindowPosition": "Right Third" }
+      ]
+    },
+    "Layout 8 - 2 x 2 Grid": {
+      "Apps": [
+        { "Name": "Find My", "WindowPosition": "Top Leading" },
+        { "Name": "App Store", "WindowPosition": "Top Trailing" },
+        { "Name": "Stocks", "WindowPosition": "Bottom Leading" },
+        { "Name": "Weather", "WindowPosition": "Bottom Trailing" }
+      ]
+    }
+  }
+}
