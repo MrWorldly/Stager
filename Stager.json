@@ -6,37 +6,37 @@
   "Stages": {
     "1 - Outlook, Things, & Slack": {
       "Apps": [
-        { "Name": "Outlook", "WindowPosition": "Left" },
-        { "Name": "Things", "WindowPosition": "Top Trailing" },
-        { "Name": "Slack", "WindowPosition": "Bottom Trailing" }
+        { "Name": "com.microsoft.Office.Outlook", "WindowPosition": "Left" },
+        { "Name": "com.culturedcode.ThingsiPad", "WindowPosition": "Top Right" },
+        { "Name": "com.tinyspeck.chatlyio", "WindowPosition": "Bottom Right" }
       ]
     },
     "2 - Safari, Notes, & Zoom": {
       "Apps": [
-        { "Name": "Safari", "WindowPosition": "Left" },
-        { "Name": "Notes", "WindowPosition": "Top Trailing" },
-        { "Name": "Zoom", "WindowPosition": "Bottom Trailing" }
+        { "Name": "com.apple.mobilesafari", "WindowPosition": "Left" },
+        { "Name": "com.apple.mobilenotes", "WindowPosition": "Top Right" },
+        { "Name": "us.zoom.videomeetings", "WindowPosition": "Bottom Right" }
       ]
     },
     "5 - News": {
       "Apps": [
-        { "Name": "News", "WindowPosition": "Left Third" },
-        { "Name": "Reddit", "WindowPosition": "Middle Third" },
-        { "Name": "Newsify", "WindowPosition": "Right Third" }
+        { "Name": "com.apple.news", "WindowPosition": "Left Third" },
+        { "Name": "com.reddit.Reddit", "WindowPosition": "Middle Third" },
+        { "Name": "com.synsion.Newsify", "WindowPosition": "Right Third" }
       ]
     },
     "4 - Personal Comms": {
       "Apps": [
-        { "Name": "Mail", "WindowPosition": "Top Leading" },
-        { "Name": "Messages", "WindowPosition": "Top Trailing" },
-        { "Name": "Calendar", "WindowPosition": "Bottom Leading" },
-        { "Name": "ChatGPT", "WindowPosition": "Bottom Trailing" }
+        { "Name": "com.apple.mobilemail", "WindowPosition": "Top Left" },
+        { "Name": "com.apple.MobileSMS", "WindowPosition": "Top Right" },
+        { "Name": "com.apple.mobilecal", "WindowPosition": "Bottom Left" },
+        { "Name": "com.openai.chat", "WindowPosition": "Bottom Right" }
       ]
     },
     "3 - Music & Podcasts": {
       "Apps": [
-        { "Name": "Music", "WindowPosition": "Left" },
-        { "Name": "Podcasts", "WindowPosition": "Right" }      
+        { "Name": "com.apple.Music", "WindowPosition": "Left" },
+        { "Name": "com.apple.podcasts", "WindowPosition": "Right" }      
       ]
     }
   }

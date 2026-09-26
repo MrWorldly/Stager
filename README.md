@@ -1,10 +1,23 @@
-# 🧩 Stager (Beta 1)
+# 🧩 Stager (Beta 2)
 
 **Author:** MrWorldly  
 **Platform:** iPad (Stage Manager)  
-**Version:** Beta 1  
-**Tested on:** iPad Air 13” (2025), iPadOS 26  
+**Version:** Beta 2  
+**Requires:** iPadOS 27  
+**Tested on:** iPad Air 13” (2025), iPadOS 27  
 **License:** MIT
+
+---
+
+## 🆕 Beta 2: iPadOS 27 update
+
+iPadOS 27 changed how Shortcuts handles Stage Manager, which broke Beta 1. Beta 2 fixes it:
+
+- **Requires iPadOS 27.** Stager now switches between Stage Manager and Windowed Apps itself using the new *Set Multitasking Mode* action.
+- **Use bundle identifiers for apps.** Plain app names such as `"Mail"` no longer open apps; use `"com.apple.mobilemail"`. See [App Identifiers](#-app-identifiers--limitations).
+- **Simpler position names.** `Top Left`, `Top Right`, `Bottom Left`, and `Bottom Right` replace `Top Leading`, `Top Trailing`, `Bottom Leading`, and `Bottom Trailing`.
+
+The example files in this repository are updated. Update your own `Stager.json` the same way.
 
 ---
 
@@ -48,7 +61,7 @@ Once downloaded:
 iCloud Drive › Shortcuts › Stager › Stager.json
 ```
 
-Also include `Stager Examples.json` for sample layouts.
+Also include `Stager Sample.json` for sample layouts.
 
 ---
 
@@ -68,17 +81,10 @@ These methods allow fast access without opening the Shortcuts app manually.
 
 ---
 
-## ⚠️ Pre-Run Checklist
+## ⚠️ Before Running
 
-Before running Stager:
-
-1. Ensure your iPad is toggling between **Full Screen Apps** and **Stage Manager**, not “Windowed Apps”  
-2. If you previously used “Full Screen ↔ Windowed” mode, app positioning may break  
-3. To reset:
-   - Open a Full Screen app  
-   - Activate Stage Manager via Control Center  
-   - Confirm windows are grouped under stages  
-   - Re-run Stager
+Stager switches between Stage Manager and Windowed Apps on its own and finishes in Stage Manager.
+If windows end up in the wrong stages, switch to Stage Manager in Control Center and run Stager again.
 
 ---
 
@@ -103,7 +109,7 @@ To optimize speed, you can **select which stages to reinitialize**, avoiding ful
 iCloud Drive › Shortcuts › Stager › Stager.json
 ```
 
-Include `Stager Examples.json` for reference layouts.
+Include `Stager Sample.json` for reference layouts.
 
 ### Sample Configuration
 
@@ -116,16 +122,16 @@ Include `Stager Examples.json` for reference layouts.
   "Stages": {
     "1 - Work": {
       "Apps": [
-        { "Name": "Outlook", "WindowPosition": "Left" },
-        { "Name": "Things", "WindowPosition": "Top Trailing" },
-        { "Name": "Slack", "WindowPosition": "Bottom Trailing" }
+        { "Name": "com.microsoft.Office.Outlook", "WindowPosition": "Left" },
+        { "Name": "com.culturedcode.ThingsiPad", "WindowPosition": "Top Right" },
+        { "Name": "com.tinyspeck.chatlyio", "WindowPosition": "Bottom Right" }
       ]
     },
     "2 - Meetings": {
       "Apps": [
-        { "Name": "Safari", "WindowPosition": "Right" },
-        { "Name": "Notes", "WindowPosition": "Top Leading" },
-        { "Name": "Zoom", "WindowPosition": "Bottom Leading" }
+        { "Name": "com.apple.mobilesafari", "WindowPosition": "Right" },
+        { "Name": "com.apple.mobilenotes", "WindowPosition": "Top Left" },
+        { "Name": "us.zoom.videomeetings", "WindowPosition": "Bottom Left" }
       ]
     }
   }
@@ -147,9 +153,10 @@ Include `Stager Examples.json` for reference layouts.
 
 ---
 
-## 📱 App Naming & Limitations
+## 📱 App Identifiers & Limitations
 
-- App names must match **Spotlight search** or use **bundle identifiers** (e.g., `"com.apple.mobilesafari"`)  
+- On iPadOS 27, `Name` must be the app's **bundle identifier** (e.g., `"com.apple.mobilesafari"`); plain app names no longer open apps  
+- To find an app's identifier, open `https://itunes.apple.com/search?entity=software&term=APP NAME` in a browser and look for `bundleId`. `Stager Sample.json` lists identifiers for many Apple apps; Settings is `com.apple.Preferences`  
 - An app can only appear in **one stage** — last listed takes precedence  
 - Apple Shortcuts **cannot open multiple windows** of the same app (e.g., two Files instances)
 
@@ -161,8 +168,8 @@ Known working positions include:
 
 - `Left`, `Right`
 - `Top`, `Bottom`
-- `Top Leading`, `Top Trailing`  
-- `Bottom Leading`, `Bottom Trailing`  
+- `Top Left`, `Top Right`  
+- `Bottom Left`, `Bottom Right`  
 - `Left Third`, `Middle Third`, `Right Third`
 - `Full Screen`
 - `Center`
@@ -240,7 +247,7 @@ No warranty provided. Use at your own risk.
 
 Tested only on:
 
-- **iPadOS 26**  
+- **iPadOS 27**  
 - **iPad Air 13” (2025)**
 
 Other devices or OS versions may behave differently.  
